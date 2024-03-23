@@ -1,20 +1,21 @@
 require("dotenv").config();
 const express = require("express");
-
 const app = express();
 const cors = require("cors");
+const PORT = process.env.PORT || 3000;
 
 const connectDB = require("./db/connect");
 
-app.use(cors());
+const userRoutes = require("./routes/user.routes");
 
+app.use(cors());
 app.use(express.json());
+
+app.use("/api/v1/users", userRoutes);
 
 app.get("/", (req, res) => {
   res.send("<h1>Blog API</h1>");
 });
-
-const PORT = process.env.PORT || 3000;
 
 const start = (async = async () => {
   try {
