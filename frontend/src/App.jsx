@@ -9,8 +9,8 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <Header></Header>
+    <div>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
@@ -20,7 +20,7 @@ function App() {
         <Route path="/post/:postId/edit" element={<PostEditor />} />
       </Routes>
 
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 }

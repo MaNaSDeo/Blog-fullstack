@@ -1,5 +1,3 @@
-const base_URL = "https://blog-backend-i77j.onrender.com/";
-
-//   "https://blogging-platform-application-backend.onrender.com/api";
+const base_URL = "https://blog-backend-i77j.onrender.com/api/v1";
 
 export { base_URL };

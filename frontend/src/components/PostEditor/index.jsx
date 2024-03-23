@@ -4,6 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import { enqueueSnackbar } from "notistack";
 import styles from "./PostEditor.module.scss";
+import { base_URL } from "../../config";
 
 const PostEditor = () => {
   const navigate = useNavigate();
@@ -23,15 +24,11 @@ const PostEditor = () => {
 
     if (isEditing) {
       try {
-        const res = await axios.put(
-          `http://localhost:5000/api/posts/${postId}`,
-          formData,
-          {
-            headers: {
-              Authorization: `Bearer ${authToken}`,
-            },
-          }
-        );
+        const res = await axios.put(`${base_URL}/posts/${postId}`, formData, {
+          headers: {
+            Authorization: `Bearer ${authToken}`,
+          },
+        });
         // console.log(res);
         if (res.status === 200) {
           enqueueSnackbar("Post updated successfully.", { variant: "success" });
@@ -47,15 +44,11 @@ const PostEditor = () => {
 
     //Api request
     try {
-      const res = await axios.post(
-        "http://localhost:5000/api/posts",
-        formData,
-        {
-          headers: {
-            Authorization: `Bearer ${authToken}`,
-          },
-        }
-      );
+      const res = await axios.post(`${base_URL}/posts`, formData, {
+        headers: {
+          Authorization: `Bearer ${authToken}`,
+        },
+      });
       // console.log(res);
       if (res.status === 201) {
         enqueueSnackbar("Post added successfully.", { variant: "success" });
