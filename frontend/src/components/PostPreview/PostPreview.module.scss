@@ -1,0 +1,11 @@
+.postPreview {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.postPreviewActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
