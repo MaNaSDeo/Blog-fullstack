@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Input from "../Input/Input";
 import Button from "../Button/Button";
-import styles from "./Form.css";
+import styles from "./Form.module.scss";
 
 const Form = ({ inputs, onSubmit }) => {
   const [formData, setFormData] = useState({});
