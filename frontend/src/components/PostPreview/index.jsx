@@ -1,6 +1,6 @@
 import styles from "./PostPreview.module.scss";
-import { ReactComponent as DeleteIcon } from "../../delete-icon.svg";
-import { ReactComponent as EditIcon } from "../../edit-icon.svg";
+import DeleteIcon from "@mui/icons-material/Delete";
+import EditIcon from "@mui/icons-material/Edit";
 
 const PostPreview = ({
   title,

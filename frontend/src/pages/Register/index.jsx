@@ -1,5 +1,4 @@
-import React from "react";
-import Form from "../../components/Form/Form";
+import Form from "../../components/Form";
 import styles from "./Register.module.scss";
 import axios from "axios";
 import { useSnackbar } from "notistack";

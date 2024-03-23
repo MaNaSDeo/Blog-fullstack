@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import PostPreview from "../../components/PostPreview/PostPreview";
+import PostPreview from "../../components/PostPreview";
 import { useNavigate } from "react-router-dom";
-import Button from "../../components/Button/Button";
+import Button from "../../components/Button";
 import axios from "axios";
 import { enqueueSnackbar } from "notistack";
 import styles from "./Dashboard.module.scss";

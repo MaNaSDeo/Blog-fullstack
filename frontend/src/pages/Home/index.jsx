@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import PostView from "../../components/PostView/PostView";
+import PostView from "../../components/PostView";
 import styles from "./Home.module.scss";
 import axios from "axios";
 import { base_URL } from "../../config";

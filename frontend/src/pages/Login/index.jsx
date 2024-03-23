@@ -1,4 +1,4 @@
-import Form from "../../components/Form/Form";
+import Form from "../../components/Form";
 import styles from "./Login.module.scss";
 import axios from "axios";
 import { enqueueSnackbar } from "notistack";

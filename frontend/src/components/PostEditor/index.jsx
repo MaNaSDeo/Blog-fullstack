@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Form from "../Form/Form";
+import Form from "../Form";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import { enqueueSnackbar } from "notistack";
