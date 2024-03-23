@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  padding: 1rem 4rem;
+  background-color: #3498db;
+  color: white;
+}
+
+.header ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.header ul li {
+  list-style: none;
+}
+
+.header ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.header ul li a:visited {
+  color: white;
+}
+
+.header ul li a:hover {
+  text-decoration: underline;
+}
+
+.header ul li a:active {
+  text-decoration: none;
+  color: white;
+}
+
+.header ul li a:focus {
+  text-decoration: none;
+  color: green;
+}
