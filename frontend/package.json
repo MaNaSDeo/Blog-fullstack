@@ -1,8 +1,9 @@
 {
-  "name": "frontend",
+  "name": "blog-app-frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": "Manas Deo",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,8 +11,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "notistack": "^3.0.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
