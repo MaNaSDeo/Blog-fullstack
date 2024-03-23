@@ -1,0 +1,23 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  /* gap: 16px; */
+}
+
+.form label {
+  font-weight: bold;
+}
+
+.form input,
+textarea {
+  margin-bottom: 1.6rem;
+}
+
+/* 
+.form:last-child {
+    margin-bottom: 60px;
+} */
+
+/* .form input:last-child {
+    margin-bottom: 60px;
+} */
